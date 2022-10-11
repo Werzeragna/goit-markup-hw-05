@@ -57,7 +57,7 @@
       <section class="promo section">
         <div class="container">
           <h1 class="promo-txt">Ефективні рішення для вашого бізнесу</h1>
-          <button class="promo-button" type="button">Замовити послугу</button>
+          <button class="promo-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!--Особливості-->
@@ -119,14 +119,17 @@
           <ul class="list about-list">
             <li class="about-item">
               <img src="./img/box1.jpg" alt="Тицяємо по клавітурі" width="370" height="294" />
+              <p class="about-item-title">десктопні додатки</p>
             </li>
 
             <li class="about-item">
               <img src="./img/box2.jpg" alt="Робимо дизайн Iphone 14" width="370" height="294" />
+              <p class="about-item-title">мобільні додатки</p>
             </li>
 
             <li class="about-item">
               <img src="./img/box3.jpg" alt="Кольорова палітра" width="370" height="294" />
+              <p class="about-item-title">дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -406,5 +409,16 @@
         </div>
       </div>
     </footer>
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>
+          <svg class="icon modal-button-icon" width="18" height="18">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
